@@ -5,10 +5,10 @@ from random import randint
 from time import sleep
 
 # --------------- Twitter AUTH KEYS CARL --------------------------
-# consumer_key = 'XZeZ1sSperKHeVZDaiPCcNGZd'
-# consumer_secret = 'iaeN6vlkOuRyLrtKY2L1Djaz1b0AEf8k9oDqQToIGB0xVFAco6'
-# access_token = '394330749-53oY3T27nYsJ4UJLtbaJCKWpFx63Bf8cByrVPVIf'
-# access_token_secret = '23gHC5R27q87nEgt7fKd2MH5R0UPo4xfVj3Q835Yln8UY'
+# consumer_key = ''
+# consumer_secret = ''
+# access_token = ''
+# access_token_secret = ''
 # auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 # auth.set_access_token(access_token, access_token_secret)
 # api = tweepy.API(auth)
@@ -16,10 +16,10 @@ from time import sleep
 
 # ----------------------------------------------------------
 
-consumer_key = '5CFs9vudSev0fIxOt8p2Q1QfM'
-consumer_secret = 'wIYuEps6zNYSizA0r4VsWmsHegwQfMC7YnbZ7M9PQXIToW9rbt'
-access_token = '2978112797-mNDVROv6k2CvmiQHIzDPqPFOKO8xqluvSCodYLq'
-access_token_secret = 'CM4sJWeWu0gmiUpdOGELW5IgcInQGlemRTQrLXwMVZDLn'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
