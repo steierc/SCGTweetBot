@@ -25,12 +25,9 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 # ----------- Other  Vars -------------
-do_not_rt_list = ['@specutainment', '@prescottmsport', '@synergy72', '@taindogg', '@dailysportscar', '@dsceditor',
-                  '@sportscar365', '@sc365live']
-fiawec_handle = ["@fiawec", "@europeanlms", '@toyota_hybrid', '@bykolles', '@protonracing', '@gdrive_racing',
-                 '@afcorse', '@tdsacing_live', '@amr_official', '@rebellionracing', '@circuitspa', '@jotasport',
-                 '@oliverjameswebb', '@officialtfsport', '@porscheraces', '@fordperformance', '@racingteamnl', '@ginettacars']
-search_query = "#WEC OR #FIAWEC OR #6hspa"
+do_not_rt_list = [']
+fiawec_handle = [']
+search_query = "#TEST"
 languages_to_rt_from = ['en', 'nl', 'de', 'fr']
 minutes_to_wait_between_searches = 15
 
@@ -39,12 +36,7 @@ minutes_to_wait_between_searches = 15
 
 # # ----------- Get Tweets ------------
 #
-# # tweets = tweepy.Cursor(api.user_timeline, id="fiawec").items(10)
-# # tweets = tweepy.Cursor(api.search, q='#WEC', since=last60search).items(100)
-# tweets = tweepy.Cursor(api.search, q="#WEC OR #FIAWEC OR #6hspa", since=last60search).items(100)
-# TWEETLIST=list(tweets)
-# # for tweet in tweets:
-#
+
 
 
 def get_tweets(time_from):
@@ -105,7 +97,7 @@ def retweet_or_fav(tweets_to_be_tweeted):
             print("Counter: %s" % counter)
             userhandle = "@%s" % tweet.user.screen_name
             if userhandle.lower() in fiawec_handle:
-                print("*MUST RT ALL FIAWEC TWEETS*")
+                print("*MUST RT ALL  TWEETS*")
                 print('\nReTweeting Tweet by: @ %s [%s]' % (tweet.user.screen_name, tweet.created_at))
                 print("\tLanguage=[%s]" % tweet.user.lang)
                 print('\t[%s]\n' % tweet.text)
